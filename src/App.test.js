@@ -1,8 +1,32 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import axios from "axios";
+import App from "./App";
 
-test('renders learn react link', () => {
+jest.mock("axios", () => ({
+  get: jest.fn(),
+  post: jest.fn(),
+}));
+
+window.HTMLElement.prototype.scrollIntoView = jest.fn();
+
+test("renders finance dashboard welcome heading", async () => {
+  axios.get
+    .mockResolvedValueOnce({
+      data: {
+        totalIncome: 0,
+        totalExpense: 0,
+        netBalance: 0,
+        totalTransactions: 0,
+        categoryCount: 0,
+      },
+    })
+    .mockResolvedValueOnce({ data: [] })
+    .mockResolvedValueOnce({ data: [] })
+    .mockResolvedValueOnce({ data: [] })
+    .mockResolvedValueOnce({ data: [] });
+
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  expect(screen.getByText(/financial summary/i)).toBeInTheDocument();
+  expect(await screen.findByText(/ask your data/i)).toBeInTheDocument();
 });
