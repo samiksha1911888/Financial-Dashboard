@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# 💰 AI Financial Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my full-stack project where I built a financial dashboard to analyze data and generate insights using charts and an AI assistant.
 
-## Available Scripts
+The goal of this project was to combine data analysis with web development and create something that feels like a real-world product.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 What this project does
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Shows overall financial data like income, expenses, and balance
+* Displays trends using charts (monthly, category-wise, payment methods)
+* Allows users to ask questions about data using an AI assistant
+* Supports voice input for interacting with AI
+* Tracks recent transactions in a clean UI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **Frontend:** React, Recharts
+* **Backend:** Node.js, Express
+* **Database:** MySQL
+* **AI Integration:** OpenAI API
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 💡 Why I built this
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I wanted to practice:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* working with real datasets
+* building dashboards
+* connecting frontend + backend
+* adding AI features into a project
 
-### `npm run eject`
+This project helped me understand how data can be visualized and how users can interact with it in a smarter way.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📷 Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+(Add screenshots here)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Example:
 
-## Learn More
+![Dashboard](screenshots/dashboard.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚙️ How to run this project
 
-### Code Splitting
+### 1. Clone the repo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+git clone https://github.com/your-username/Financial-Dashboard.git
+```
 
-### Analyzing the Bundle Size
+### 2. Run frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+cd client
+npm install
+npm start
+```
 
-### Making a Progressive Web App
+### 3. Run backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+cd server
+npm install
+node index.js
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🔐 Environment setup
 
-### Deployment
+Create a `.env` file in backend folder:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```env
+OPENAI_API_KEY=your_api_key
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=your_database
+```
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🧠 What I learned
+
+* How to build a complete full-stack project
+* How to visualize data using charts
+* How to connect AI with real data
+* How to design a clean and modern dashboard UI
+
+---
+
+## 👩‍💻 About Me
+
+I am currently learning full-stack development and data analytics.
+This project is part of my learning journey where I am trying to build real-world applications.
+
+---
+
+## 📌 Future Improvements
+
+* Add more advanced AI queries
+* Improve UI animations
+* Add authentication system
+* Deploy the project online
+
+---
+
